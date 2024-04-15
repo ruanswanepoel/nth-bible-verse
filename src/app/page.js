@@ -46,20 +46,20 @@ export default function Home() {
                 </div>
             </div>
             {result && (
-                <div>
+                <div className="flex flex-col gap-6">
                     {result?.all && (
-                        <>
+                        <div>
                             <h3>Whole bible</h3>
-                            <p>{result.all.name}</p>
+                            <p className="font-bold">{result.all.name}</p>
                             <p>{result.all.verse}</p>
-                        </>
+                        </div>
                     )}
                     {result?.nt && (
-                        <>
+                        <div>
                             <h3>New Testament</h3>
-                            <p>{result.nt.name}</p>
+                            <p className="font-bold">{result.nt.name}</p>
                             <p>{result.nt.verse}</p>
-                        </>
+                        </div>
                     )}
                 </div>
             )}
