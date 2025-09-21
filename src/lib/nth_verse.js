@@ -45,5 +45,5 @@ export function nth_verse(n) {
 
 export function nth_verse_nt(n) {
     const verses = get_verses();
-    return verses[NT_START_INDEX + n - 1];
+    return verses[NT_START_INDEX + n - 2];
 }
